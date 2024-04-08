@@ -1,0 +1,36 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body {
+  height: 300vh;
+}
+
+.view {
+  height: 30vh;
+  background-color: #48e;
+  position: relative;
+  top: 100vh;
+  animation: aparecer;
+  animation-timeline: view();
+  /* animation-range-start: cover 0;
+  animation-range-end: contain 80%; */
+  animation-range: cover 0%, contain 80%;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}

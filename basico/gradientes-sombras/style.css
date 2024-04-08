@@ -1,0 +1,50 @@
+:root {
+  color-scheme: dark light;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  margin: 30px auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+.linear {
+  background: linear-gradient(to top, #48e, transparent);
+}
+
+.radial {
+  background: radial-gradient(closest-side, #f4f, transparent);
+}
+
+.conic {
+  background: conic-gradient(#f00, #f90, #ef3, #0f0, #00f);
+}
+
+.shadow {
+  background-color: #666;
+  box-shadow: 0 0 50px 0 #fff6;
+}
+
+.text {
+  background-color: #666;
+}
+
+.text p {
+  text-shadow: 0 0 10px #0f0;
+}
+
+.drop {
+  background-image: url("pc.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom;
+  filter: drop-shadow(0 0 10px #48e);
+}

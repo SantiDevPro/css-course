@@ -1,0 +1,42 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.flexbox {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex__item {
+  /* width: 200px;
+  height: 200px; */
+  background-color: #f70;
+  font-size: 35px;
+  text-align: center;
+  /* flex-basis: 150px; */
+  flex: 1 1 200px;
+}
+
+.flex__item:first-child {
+  flex-grow: 2;
+  background-color: #911;
+}
+
+.flex__item:last-child {
+  background-color: #119;
+  flex-grow: 3;
+}
+
+.flex__item:nth-child(3) {
+  /* flex-shrink: 2; */
+  background-color: #1f1;
+}

@@ -1,0 +1,32 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contain-1,
+.contain-2,
+.contain-3 {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #333;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.contain-1 {
+  width: min(400px, 100%);
+}
+
+.contain-2 {
+  width: max(400px, 100%);
+}
+
+.contain-3 {
+  width: clamp(400px, 100%, 1000px);
+}

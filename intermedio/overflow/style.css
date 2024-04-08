@@ -1,0 +1,29 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+}
+
+.content__box {
+  width: 50%;
+  height: 200px;
+  background-color: #333;
+  padding: 10px;
+  /* overflow: clip; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+.content__box p {
+  font-size: 20px;
+}

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Tiago";
+  src: url("fonts/SourceCodePro-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Tiago";
+  src: url("fonts/SourceCodePro-Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Tiago";
+  src: url("fonts/SourceCodePro-Black.ttf") format("truetype");
+  font-weight: 900;
+}

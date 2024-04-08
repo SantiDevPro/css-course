@@ -1,0 +1,27 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #333;
+  margin: auto;
+  padding: 20px;
+  /* overflow: hidden; */
+  white-space: normal;
+  /* text-overflow: ellipsis; */
+  word-wrap: break-word;
+  text-wrap: pretty;
+}
+
+h2 {
+  font-size: 55px;
+  text-wrap: balance;
+}

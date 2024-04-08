@@ -1,0 +1,40 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: #119;
+  text-align: center;
+  align-content: center;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.rotate {
+  transform: rotate(120deg);
+}
+
+.scale {
+  transform: scale(1.2);
+}
+
+.translate {
+  transform: translate(80px, 30px);
+}
+
+.skew {
+  transform: skew(20deg);
+}

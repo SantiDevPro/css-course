@@ -1,0 +1,24 @@
+:root {
+  color-scheme: dark;
+}
+
+.flexbox {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row-reverse;
+  flex-wrap: wrap-reverse; */
+  flex-flow: row-reverse wrap-reverse;
+}
+
+.flex__item {
+  width: 150px;
+  height: 150px;
+  background-color: #911;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+.flex__item:first-child {
+  background-color: #c66;
+}

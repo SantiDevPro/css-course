@@ -1,0 +1,30 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.grid-fit,
+.grid-fill {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.grid-fit {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-fill {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-item {
+  background-color: #a6a;
+  padding: 10px;
+  border-radius: 10px;
+}

@@ -1,0 +1,35 @@
+:root {
+  color-scheme: dark light;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #48e;
+  margin: 20px auto;
+}
+
+.borde-de-3 {
+  border-width: 5px;
+  border-color: #ff1;
+  border-style: solid;
+}
+
+.borde-de-1 {
+  border: 10px dashed #ff3;
+}
+
+.borde-por-direccion {
+  border-left: 4px solid #f00;
+  border-top: 10px dashed #0f0;
+  border-right: 6px double #f2f;
+  border-bottom: 20px groove #ff3;
+}
+
+.borde-radial {
+  border-radius: 10px 30% 100px 10%;
+}

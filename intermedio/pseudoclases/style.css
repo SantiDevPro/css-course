@@ -1,0 +1,52 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  font-size: 40px;
+  color: #48e;
+  text-align: center;
+}
+
+h1:hover {
+  text-decoration: underline overline;
+}
+
+main h2:first-child {
+  font-size: 30px;
+  color: #ef3;
+}
+
+main p:last-child {
+  color: #f22;
+}
+
+main p:nth-child(2),
+main p:nth-child(3) {
+  color: #55f;
+  font-size: 20px;
+}
+
+a:visited {
+  color: #0f0;
+}
+
+ul li:nth-child(2n) {
+  color: #f50;
+}
+
+ul li:nth-child(2n) {
+  background-color: #333;
+}
+
+ul li:not(.excluir) {
+  background-color: #55f;
+}
+
+ol :is(.list1, .list2, .list3) {
+  color: #0f0;
+}
+
+ol:has(.list2) {
+  background-color: #333;
+}

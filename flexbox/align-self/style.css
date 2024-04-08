@@ -1,0 +1,35 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px;
+  align-items: center;
+  /* align-content: center; */
+  border: 2px solid #fff;
+  height: 400px;
+}
+
+.items {
+  background-color: #911;
+  flex: 1 1 150px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.items:nth-child(2n) {
+  background-color: #c66;
+}
+
+.items:nth-child(5) {
+  align-self: stretch;
+  align-content: center;
+}

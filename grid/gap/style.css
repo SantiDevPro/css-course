@@ -1,0 +1,22 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  /* row-gap: 25px;
+  column-gap: 10px; */
+  gap: 25px 40px;
+}
+
+.grid-item {
+  background-color: #229;
+  padding: 10px;
+}

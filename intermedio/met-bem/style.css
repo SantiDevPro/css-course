@@ -1,0 +1,34 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.list {
+  width: 400px;
+  margin: 20px;
+  padding: 40px;
+  background-color: #333;
+}
+
+.list__item {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #33f;
+}
+
+.item--danino {
+  color: #f33;
+}
+
+.item--import {
+  color: #3f3;
+}
+
+.list--old {
+  background-color: #666;
+}

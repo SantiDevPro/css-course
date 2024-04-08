@@ -1,0 +1,47 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0008;
+}
+
+.modal__content {
+  background-color: #48e;
+  padding: 10px 20px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+}
+
+.modal__title {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.modal__close-button {
+  background-color: #fff;
+  color: #48e;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 12px;
+}

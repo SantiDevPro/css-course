@@ -1,0 +1,29 @@
+:root {
+  color-scheme: dark light;
+}
+
+/* Opcion 1 */
+.op-1 {
+  padding: 50px;
+}
+.op-1 h2 {
+  font-family: montserrat;
+  font-weight: 700;
+}
+.op-1 p {
+  font-family: montserrat;
+  font-weight: 400;
+}
+
+/* Opcion 2 */
+.op-2 {
+  padding: 50px;
+}
+.op-2 h2 {
+  font-family: "Tiago";
+  font-weight: 900;
+}
+.op-2 p {
+  font-family: "Tiago";
+  font-weight: 300;
+}

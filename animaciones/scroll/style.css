@@ -1,0 +1,62 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body {
+  height: 200vh;
+}
+
+.bar-container {
+  position: fixed;
+  border: 2px solid #fff;
+  width: 90vw;
+  height: 50px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.bar-load {
+  height: 100%;
+  background-color: #48e;
+  border-radius: 10px;
+  animation-name: load;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-timeline: scroll();
+}
+
+.scroll {
+  height: 30vh;
+  background-color: #e84;
+  position: relative;
+  top: 100vh;
+  animation: crecer;
+  animation-timeline: scroll();
+}
+
+@keyframes load {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes crecer {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

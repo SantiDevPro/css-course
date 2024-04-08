@@ -1,0 +1,60 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "nav main aside"
+    "footer footer footer";
+  height: 80vh;
+}
+
+header,
+footer,
+nav,
+main,
+aside {
+  padding: 10px;
+  cursor: grab;
+}
+
+header:hover,
+footer:hover,
+nav:hover,
+main:hover,
+aside:hover {
+  opacity: 0.6;
+}
+
+header {
+  background-color: #229;
+  grid-area: header;
+}
+
+footer {
+  background-color: #292;
+  grid-area: footer;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #525;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #630;
+}
+main {
+  grid-area: main;
+  background-color: #199;
+}

@@ -1,0 +1,38 @@
+:root {
+  color-scheme: dark light;
+}
+
+h1 {
+  color: #0ef;
+  font-family: sans-serif;
+}
+
+p {
+  color: #0fe;
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.p-1 {
+  text-align: left;
+  text-decoration: overline;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 3px;
+}
+.p-2 {
+  text-align: center;
+  text-decoration: line-through;
+  text-transform: capitalize;
+  line-height: 2;
+  letter-spacing: 3px;
+}
+.p-3 {
+  text-align: right;
+  text-decoration: underline;
+  text-transform: lowercase;
+  line-height: 2;
+  letter-spacing: 3px;
+}

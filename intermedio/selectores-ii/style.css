@@ -1,0 +1,41 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-left: 30px;
+}
+
+/* SELECTOR POR ATRIBUTO */
+img[src="baki.jpg"] {
+  width: 400px;
+  margin: 30px;
+}
+
+/* SELECTOR DESCENDIENTE */
+ul li {
+  font-size: 20px;
+  color: #48e;
+  padding: 10px;
+}
+
+/* SELECTOR POR HIJO DIRECTO */
+main > p {
+  font-size: 20px;
+  color: #f3f;
+  padding: 30px;
+}
+
+/* SELECTOR DE HERMANOS ADYACENTES */
+h2 + p {
+  color: #ee3;
+}
+
+/* SELECTOR DE HERMANOS GENERALES */
+p ~ ul {
+  background-color: #333;
+}

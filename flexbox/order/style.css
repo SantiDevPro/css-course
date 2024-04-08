@@ -1,0 +1,40 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.flexbox {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex__item {
+  width: 200px;
+  height: 200px;
+  background-color: #911;
+  font-size: 35px;
+  text-align: center;
+}
+
+.flex__item:first-child {
+  order: 5;
+}
+
+.flex__item:last-child {
+  order: 1;
+}
+
+.flex__item:nth-child(2) {
+  order: 4;
+}
+
+.flex__item:nth-child(4) {
+  order: 3;
+}

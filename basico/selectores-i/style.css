@@ -1,0 +1,72 @@
+:root {
+  color-scheme: dark light;
+}
+
+/* Selector Universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Selector de tipo */
+body {
+  padding: 100px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+
+span {
+  width: 250px;
+  height: 50px;
+  background-color: #fff;
+  margin-top: 50px;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+/* Selector de clase */
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: #ff3;
+}
+
+/* Selector de ID */
+#content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* Selector de atributo */
+[type] {
+  width: 150px;
+  height: 50px;
+  margin-top: 50px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #000;
+}
+
+/* Selector de pseudo-clase */
+span:hover {
+  background-color: #ff3;
+}
+
+.item:hover {
+  transform: rotate(25deg);
+}
+
+input:focus {
+  border: 4px solid #ff6;
+}

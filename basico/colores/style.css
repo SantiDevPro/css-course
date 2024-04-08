@@ -1,0 +1,46 @@
+:root {
+  color-scheme: dark light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.rgb {
+  background-color: rgb(100, 150, 200);
+}
+
+.rgba {
+  background-color: rgba(200, 150, 100, 0.6);
+}
+
+.hexadecimal {
+  background-color: #77eeaa;
+}
+
+.hexadecimal-a {
+  background-color: #53edac60;
+}
+
+.hsl {
+  background-color: hsl(240, 60%, 30%);
+}
+
+.hsla {
+  background-color: hsla(110, 55%, 80%, 0.8);
+}

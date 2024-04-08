@@ -1,0 +1,49 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #48e;
+}
+
+h1::after,
+h1::before {
+  content: "💙";
+}
+
+h2 {
+  font-size: 30px;
+  color: #ef3;
+}
+
+h2::selection {
+  background-color: #f90;
+}
+
+p {
+  font-size: 20px;
+  padding: 20px;
+}
+
+p::first-letter {
+  color: #f90;
+}
+
+p::first-line {
+  text-decoration: underline;
+}
+
+input {
+  padding: 5px;
+}
+
+input::placeholder {
+  color: #f33;
+}
+
+li::marker {
+  color: #48e;
+  font-size: 20px;
+}
