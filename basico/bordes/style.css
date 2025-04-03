@@ -6,6 +6,12 @@ h1 {
   text-align: center;
 }
 
+p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #fff;
+}
+
 .box {
   width: 200px;
   height: 200px;

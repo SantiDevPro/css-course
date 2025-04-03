@@ -17,7 +17,13 @@ body {
 h1 {
   text-align: center;
   text-decoration: underline;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
 span {
@@ -29,6 +35,7 @@ span {
   font-size: 30px;
   text-align: center;
   padding-top: 6px;
+  cursor: pointer;
 }
 
 /* Selector de clase */
@@ -36,6 +43,7 @@ span {
   width: 200px;
   height: 200px;
   background-color: #ff3;
+  margin: 20px;
 }
 
 /* Selector de ID */

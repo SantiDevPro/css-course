@@ -7,6 +7,11 @@ h1 {
   font-size: 40px;
 }
 
+p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .box {
   background-color: #333;
   width: 90%;
@@ -22,15 +27,15 @@ h1 {
 }
 
 .box--blue {
-  background-color: #00f;
+  background-color: #0af;
   transition-property: background-color, color;
   transition-duration: 2s;
   transition-delay: 0.5s;
 }
 
 .box--blue:hover {
-  color: #ef3;
-  background-color: #f00;
+  color: #f00;
+  background-color: #ff0;
 }
 
 .box__item:last-child,
@@ -59,7 +64,7 @@ h1 {
 
 .box--green {
   position: relative;
-  background-color: #0f0;
+  background-color: #0fa;
   color: #000;
   transition: left 3s linear;
   left: 0;

@@ -33,7 +33,7 @@ p {
 
 /* background-image */
 .image {
-  background-image: url("baki.jpg");
+  background-image: url("/img/hugo.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,5 +42,5 @@ p {
 
 /* background */
 .background {
-  background: 50% / 80% 80% no-repeat url("baki.jpg");
+  background: 50% / 60% 100% no-repeat url("/img/faceless-ia.png");
 }

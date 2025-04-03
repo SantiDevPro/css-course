@@ -10,9 +10,14 @@ h2 {
   margin-left: 30px;
 }
 
+p {
+  text-align: justify;
+}
+
 /* SELECTOR POR ATRIBUTO */
-img[src="baki.jpg"] {
-  width: 400px;
+img[src="/img/hugo.png"] {
+  width: 90vw;
+  max-width: 400px;
   margin: 30px;
 }
 

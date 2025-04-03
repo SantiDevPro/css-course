@@ -8,6 +8,11 @@ h1 {
   margin-bottom: 50px;
 }
 
+p {
+  font-size: 16px;
+  text-align: center;
+}
+
 .box {
   width: 200px;
   height: 200px;

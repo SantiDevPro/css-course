@@ -7,6 +7,12 @@ h2 {
   text-align: center;
 }
 
+p {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
 .box {
   width: 200px;
   height: 200px;

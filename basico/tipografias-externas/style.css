@@ -2,17 +2,31 @@
   color-scheme: dark light;
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  font-family: "Tiago", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+
 /* Opcion 1 */
 .op-1 {
   padding: 50px;
 }
 .op-1 h2 {
-  font-family: montserrat;
+  font-family: "Montserrat";
   font-weight: 700;
 }
 .op-1 p {
-  font-family: montserrat;
+  font-family: "Montserrat";
   font-weight: 400;
+  text-align: justify;
 }
 
 /* Opcion 2 */
@@ -26,4 +40,5 @@
 .op-2 p {
   font-family: "Tiago";
   font-weight: 300;
+  text-align: justify;
 }

@@ -3,16 +3,18 @@
 }
 
 h1 {
-  color: #0ef;
+  color: #0af;
   font-family: sans-serif;
+  text-align: center;
 }
 
 p {
-  color: #0fe;
+  color: #0af;
   font-family: cursive;
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
+  text-align: center;
 }
 
 .p-1 {
