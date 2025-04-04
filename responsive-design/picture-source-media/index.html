@@ -3,14 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PICTURE SOURCE Y MEDIA</title>
+    <title>RESPONSIVE DESIGN - Picture, Source y Media</title>
   </head>
   <body>
-    <h1>PICTURE SOURCE Y MEDIA</h1>
-    <picture>
-      <source media="(max-width: 400px)" srcset="tiger-s.jpg" />
-      <source media="(max-width: 700px)" srcset="tiger-m.jpg" />
-      <img src="tiger-l.jpg" alt="Tiger" />
-    </picture>
+    <header>
+      <h1>Picture, Source y Media</h1>
+      <p>
+        <strong>Picture:</strong> etiqueta que permite definir múltiples
+        versiones de una imagen para adaptarse a diferentes dispositivos o
+        condiciones.
+      </p>
+      <p>
+        <strong>Source:</strong> especifica una fuente alternativa de imagen
+        dentro de <code>picture</code> con condiciones específicas.
+      </p>
+      <p>
+        <strong>Media:</strong> atributo que define una consulta de medios
+        (media query) para aplicar una fuente específica según las
+        características del dispositivo.
+      </p>
+    </header>
+    <main>
+      <picture>
+        <source media="(max-width: 400px)" srcset="/img/hugo-s.png" />
+        <source media="(max-width: 700px)" srcset="/img/hugo-m.png" />
+        <img src="/img/hugo.png" alt="Hugo Lee" />
+      </picture>
+    </main>
   </body>
 </html>

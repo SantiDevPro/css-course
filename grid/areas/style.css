@@ -5,7 +5,13 @@
 h1 {
   font-size: 40px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .grid {
@@ -16,6 +22,15 @@ h1 {
     "nav main aside"
     "footer footer footer";
   height: 80vh;
+}
+
+#encabezado, #principal {
+  background-color: #111;
+  cursor: default;
+}
+
+#encabezado:hover, #principal:hover {
+  opacity: 1;
 }
 
 header,

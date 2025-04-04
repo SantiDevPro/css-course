@@ -90,19 +90,21 @@
 
 ## _ALINEACION CON GRID_
 
-- `justify-items` | propiedad que alinea los elementos dentro de su área de cuadrícula a lo largo del eje principal (horizontal)
+- `justify-items` | alinea los elementos dentro de sus celdas a lo largo del eje horizontal.
 
-- `align-items` | propiedad que alinea los elementos dentro de su área de cuadrícula a lo largo del eje secundario (vertical)
+- `align-items` | alinea los elementos dentro de sus celdas a lo largo del eje vertical.
 
-- `justify-content` | propiedad que alinea las filas de elementos dentro de un contenedor de cuadrícula a lo largo del eje principal
+- `justify-content` | alinea el contenido completo de la cuadrícula a lo largo del eje horizontal.
 
-- `align-content` | propiedad que alinea las columnas de elementos dentro de un contenedor de cuadrícula a lo largo del eje secundario
+- `align-content` | alinea el contenido completo de la cuadrícula a lo largo del eje vertical.
 
-- `place-content` | propiedad Grid y Flexbox que permite alinear y distribuir tanto elementos como el contenido dentro de un contenedor en el eje horizontal y vertical. Se utiliza para establecer tanto _align-content_ como _justify-content_ en una sola declaración
+- `place-items` | propiedad abreviada para combinar `align-items` y `justify-items`.
 
-- `justify-self` | alinea un elemento dentro de su área de cuadrícula a lo largo del eje principal, permitiendo el ajuste de la posición horizontal de un elemento dentro de una celda de la cuadrícula
+- `place-content` | propiedad abreviada para combinar `align-content` y `justify-content`.
 
-- `align-self` | alinea un elemento dentro de su área de cuadrícula a lo largo del eje secundario, permitiendo el ajuste de la posición vertical de un elemento dentro de una celda de la cuadrícula
+- `justify-self` | alinea un elemento individual dentro de su celda a lo largo del eje horizontal.
+
+- `align-self` | alinea un elemento individual dentro de su celda a lo largo del eje vertical.
 
 ## _SUBGRID_
 

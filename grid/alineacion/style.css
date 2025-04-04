@@ -8,6 +8,12 @@ h1 {
   margin-bottom: 50px;
 }
 
+p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .grid-item {
   background-color: #515;
   padding: 10px;

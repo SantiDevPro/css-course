@@ -3,15 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SRCSET Y SIZES</title>
+    <title>RESPONSIVE DESIGN - Srcset y Sizes</title>
   </head>
   <body>
-    <h1>SRCSET Y SIZES</h1>
-    <img
-      src="tiger-s.jpg"
-      alt="Tiger"
-      srcset="tiger-s.jpg 400w, tiger-m.jpg 600w, tiger-l.jpg 1000w"
-      sizes="(max-width: 400px) 360px, (max-width: 600px) 600px, 900px"
-    />
+    <header>
+      <h1>Srcset y Sizes</h1>
+      <p>
+        <strong>srcset</strong> define múltiples versiones de una imagen con
+        diferentes resoluciones o tamaños para adaptarse a distintos
+        dispositivos.
+      </p>
+      <p>
+        <strong>sizes</strong> especifica el ancho que debe usar el navegador
+        para seleccionar la imagen más adecuada del <code>srcset</code>.
+      </p>
+    </header>
+    <main>
+      <img
+        src="/img/hugo-s.png"
+        alt="Hugo Lee"
+        srcset="/img/hugo-s.png 400w, /img/hugo-m.png 700w, /img/hugo.png 1000w"
+        sizes="(max-width: 400px) 300px, (max-width: 700px) 600px, 1000px"
+      />
+    </main>
   </body>
 </html>

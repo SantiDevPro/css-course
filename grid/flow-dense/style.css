@@ -29,3 +29,8 @@ h1 {
   background-color: #363;
   grid-column: span 2;
 }
+
+.grid-item:nth-child(13) {
+  background-color: #0af;
+  grid-column: span 3;
+}
