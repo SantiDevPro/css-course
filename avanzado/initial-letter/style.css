@@ -8,6 +8,12 @@ h1 {
   margin-bottom: 50px;
 }
 
+header p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .contain {
   width: min(400px, 100%);
   margin: auto;

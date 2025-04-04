@@ -8,6 +8,12 @@ h1 {
   margin-bottom: 50px;
 }
 
+p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .flex-item {
   width: 100px;
   height: 100px;
