@@ -1,139 +1,112 @@
-# **CSS AVANZADO**
+# 🖌 **CSS AVANZADO** 🖌
 
 ---
 
-## _FILTER Y BACKDROP FILTER_
+## **Filtros**
 
-- `filter` | permite aplicar efectos de filtro a elementos HTML, como desenfoque, saturación, brillo, entre otros. Se utiliza para modificar la apariencia visual de un elemento sin modificar su contenido HTML subyacente
+- **`filter`**: Aplica efectos visuales como desenfoque, brillo, saturación, etc., sin alterar el contenido HTML.
 
-- Funciones para _filter_:
+  | Efectos         | Descripción                                                        |
+  | --------------- | ------------------------------------------------------------------ |
+  | `blur()`        | Desenfoque gaussiano.                                              |
+  | `brightness()`  | Ajusta el brillo (0% negro, 100% sin cambios).                     |
+  | `contrast()`    | Ajusta el contraste (0% gris, 100% sin cambios).                   |
+  | `drop-shadow()` | Agrega sombra simulando elevación.                                 |
+  | `grayscale()`   | Convierte a escala de grises (0% sin cambios, 100% gris completo). |
+  | `hue-rotate()`  | Gira el matiz en un ángulo.                                        |
+  | `invert()`      | Invierte colores (0% sin cambios, 100% invertido).                 |
+  | `opacity()`     | Ajusta opacidad (0% transparente, 100% opaco).                     |
+  | `saturate()`    | Ajusta saturación (0% blanco y negro, 100% sin cambios).           |
+  | `sepia()`       | Aplica tono sepia (0% sin cambios, 100% sepia completo).           |
 
-  - `blur()` | aplica un desenfoque gaussiano al elemento
+- **`backdrop-filter`**: Aplica efectos al fondo detrás del elemento (ej. desenfoque, cambio de color).
 
-  - `brightness()` | ajusta el brillo del elemento. Un valor de 0% resulta en un negro total, mientras que un valor de 100% deja el elemento sin cambios
+---
 
-  - `contrast()` | ajusta el contraste del elemento. Un valor de 0% resulta en un gris medio, mientras que un valor de 100% deja el elemento sin cambios
+## **Transformaciones**
 
-  - `drop-shadow()` | agrega una sombra al elemento, simulando la sombra proyectada por un objeto elevado sobre un fondo
+- **`transform`**: Aplica transformaciones 2D/3D como rotaciones, escalados, traslaciones y sesgos.
+  - Rotaciones:
+    - `rotate()`, `rotateX()`, `rotateY()`, `rotateZ()`.
+  - Escalados:
+    - `scale()`, `scaleX()`, `scaleY()`, `scaleZ()`.
+  - Traslaciones:
+    - `translate()`, `translateX()`, `translateY()`, `translateZ()`.
+  - Sesgos:
+    - `skew()`, `skewX()`, `skewY()`.
 
-  - `grayscale()` | convierte el elemento en una escala de grises. Un valor de 0% deja el elemento sin cambios, mientras que un valor de 100% lo convierte en una imagen en escala de grises completa
+---
 
-  - `hue-rotate()` | gira el matiz del elemento en un ángulo especificado. Se puede utilizar para cambiar los colores de un elemento
+## **Funciones min(), max() y clamp()**
 
-  - `invert()` | invierte los colores del elemento. Un valor de 0% deja el elemento sin cambios, mientras que un valor de 100% invierte completamente los colores
+| Función | Descripción                                                    |
+| ------- | -------------------------------------------------------------- |
+| `min`   | Retorna el menor de dos valores.                               |
+| `max`   | Retorna el mayor de dos valores.                               |
+| `clamp` | Limita un valor dentro de un rango (_clamp(min, ideal, max)_). |
 
-  - `opacity()` | ajusta la opacidad del elemento. Un valor de 0% hace que el elemento sea completamente transparente, mientras que un valor de 100% deja el elemento completamente opaco
+---
 
-  - `saturate()` | ajusta la saturación del elemento. Un valor de 0% produce una imagen en blanco y negro, mientras que un valor de 100% deja el elemento sin cambios
+## **Variables (Custom Properties)**
 
-  - `sepia()` | aplica un tono sepia al elemento. Un valor de 0% deja el elemento sin cambios, mientras que un valor de 100% produce una imagen completamente sepia
+- Definidas con `--nombre-variable`, reutilizables en todo el CSS.
+- Facilitan la gestión de valores como colores, tamaños, etc.
 
-- `backdrop-filter` | similar a la propiedad filter, pero se aplica al fondo detrás del elemento en lugar del elemento en sí. Se utiliza para aplicar efectos de filtro al fondo de un elemento, como desenfoque o cambio de color, creando así efectos visuales más complejos y sutiles
+---
 
-## _TRANSFORM_
+## **Función calc()**
 
-- `transform` | se utiliza para aplicar transformaciones 2D y 3D a un elemento, como rotaciones, escalados, traslaciones y sesgos. Permite modificar la apariencia y la posición de un elemento sin alterar su diseño en el flujo del documento. Las transformaciones se aplican en relación con el origen del elemento y pueden ser animadas utilizando transiciones o animaciones
+- **`calc()`**: Realiza cálculos matemáticos en línea (suma, resta, multiplicación, división) para definir valores dinámicos.
 
-- Funciones para _transform_:
+---
 
-  - `rotate()` | rota un elemento en el plano 2D
+## **Propiedades del Scroll**
 
-  - `rotateX()` | rota un elemento en el eje X - 3D
+| Propiedad         | Descripción                                                    |
+| ----------------- | -------------------------------------------------------------- |
+| `scroll-behavior` | Controla desplazamiento suave o instantáneo.                   |
+| `scrollbar-color` | Cambia colores del riel y mango de la barra de desplazamiento. |
+| `scrollbar-width` | Ajusta el ancho de la barra de desplazamiento.                 |
 
-  - `rotateY()` | rota un elemento en el eje Y - 3D
+---
 
-  - `rotateZ()` | rota un elemento en el plano 2D alrededor del eje Z
+## **Propiedad initial-letter**
 
-  - `scale()` | escala un elemento en el plano 2D en los ejes X e Y
+- **`initial-letter`**: Estiliza la primera letra de un elemento (tamaño, estilo, etc.) para efectos decorativos.
 
-  - `scaleX()` | escala un elemento en el eje X - 3D
+---
 
-  - `scaleY()` | escala un elemento en el eje Y - 3D
+## **Unidades del Viewport**
 
-  - `scaleZ()` | escala un elemento en el eje Z - 3D
+- Relativas al tamaño de la ventana gráfica:
 
-  - `translate()` | traslada un elemento en el plano 2D en los ejes X e Y
+  | Unidad                  | Descripción                                                                  |
+  | ----------------------- | ---------------------------------------------------------------------------- |
+  | `Small Viewport (sv)`   | Dispositivos pequeños (ancho: `svw`, alto: `svh`).                           |
+  | `Large Viewport (lv)`   | Dispositivos grandes (ancho: `lvw`, alto: `lvh`).                            |
+  | `Dynamic Viewport (dv)` | Considera widgets y diferencias entre pantallas (ancho: `dvw`, alto: `dvh`). |
 
-  - `translateX()` | traslada un elemento en el eje X - 3D
+---
 
-  - `translateY()` | traslada un elemento en el eje Y - 3D
+## **Valores min-content, max-content y fit-content**
 
-  - `translateZ()` | traslada un elemento en el eje Z - 3D
+| Valor         | Descripción                                                    |
+| ------------- | -------------------------------------------------------------- |
+| `min-content` | Tamaño mínimo necesario sin desbordamiento.                    |
+| `max-content` | Tamaño máximo posible sin desbordamiento.                      |
+| `fit-content` | Tamaño ajustado entre el mínimo necesario y el máximo posible. |
 
-  - `skew()` | sesga un elemento en el plano 2D en los ejes X e Y
+---
 
-  - `skewX()` | sesga un elemento en el eje X - 3D
+## **Función color-mix()**
 
-  - `skewY()` | sesga un elemento en el eje Y - 3D
+- **`color-mix()`**: Mezcla dos colores según un porcentaje.
 
-## _MIN, MAX Y CLAMP_
+---
 
-- `min` | retorna el menor de dos valores especificados
+## **Propiedad clip-path**
 
-- `max` | retorna el mayor de dos valores especificados
-
-- `clamp` | limita un valor dentro de un rango especificado, devolviendo el valor si está dentro del rango o el límite más cercano si está fuera de él. Sintaxis: _clamp(min-value,ideal-value,max-value)_
-
-## _VARIABLES (custom properties)_
-
-- Son valores definidos por el usuario que pueden reutilizarse a lo largo de un documento CSS
-
-- Se definen utilizando la sintaxis _`--nombre-variable`_ y pueden contener cualquier valor válido en CSS, como colores, números, cadenas de texto, etc
-
-- Las variables CSS proporcionan una manera eficiente de gestionar y reutilizar valores en estilos CSS, lo que facilita la creación de diseños más flexibles y mantenibles
-
-## _FUNCION CALC_
-
-- `calc()` | permite realizar cálculos matemáticos en línea para definir valores de propiedades CSS
-
-- Con _`calc()`_, se pueden combinar valores numéricos con operadores matemáticos como suma, resta, multiplicación y división
-
-- Esto proporciona una flexibilidad adicional para definir tamaños, posiciones y otros valores en CSS de manera dinámica y adaptable
-
-## _PROPIEDADES DEL SCROLL_
-
-- `scroll-behavior` | especifica el comportamiento de desplazamiento suave o instantáneo de un contenedor cuando el usuario navega por la página
-
-- `scrollbar-color` | se utiliza para cambiar el color de la barra de desplazamiento de un contenedor. Permite especificar tanto el color del riel como el del mango de la barra de desplazamiento
-
-- `scrollbar-width` | controla el ancho de la barra de desplazamiento de un contenedor. Permite establecer el ancho de la barra de desplazamiento para personalizar su apariencia
-
-## _INITIAL LETTER_
-
-- `initial-letter` | se utiliza para controlar el estilo visual de la primera letra o letras de un elemento, como un párrafo o una sección
-
-- Permite especificar el tamaño, el estilo y otras propiedades de la primera letra, lo que puede ser útil para crear efectos decorativos o de diseño en el texto
-
-## _UNIDADES DEL VIEWPORT (large, small y dynamic)_
-
-- `UNIDADES DEL VIEWPORT` | son unidades de medida relativas al tamaño de la ventana gráfica del navegador
-
-- Las unidades del viewport son: _`small viewport`_, _`large viewport`_ y _`dynamic viewport`_
-
-- `small viewport (sv)` | representa el ancho y alto del viewport de dispositivos moviles o pequeños. El ancho es _small viewport width (svw)_ y el alto es _small viewport height (svh)_
-
-- `large viewport (lv)` | representa el ancho y alto del viewport de ordenadores o dispositivos grandes. El ancho es _large viewport width (lvw)_ y el alto es _large viewport height (lvh)_
-
-- `dynamic viewport (dv)` | representa el ancho y alto del viewport para dispositivos grandes y pequeños, tomando en cuenta los widgets o diferencias que hay entre pantallas de dispositivos moviles y ordenadores. El ancho es _dynamic viewport width (dvw)_ y el alto es _dynamic viewport height (dvh)_
-
-## _MIN-CONTENT, MAX-CONTENT Y FIT-CONTENT_
-
-- `min-content` | representa el tamaño mínimo necesario para contener el contenido sin que ocurra desbordamiento
-
-- `max-content` | representa el tamaño máximo posible que el contenido puede ocupar sin que ocurra desbordamiento
-
-- `fit-content` | representa el tamaño máximo posible que el contenido puede ocupar sin que ocurra desbordamiento, pero se ajusta automáticamente al tamaño mínimo necesario si el contenido es más pequeño que el contenedor
-
-## _FUNCION COLOR MIX_
-
-- `color-mix()` | permite mezclar dos colores según un porcentaje dado
-
-## _CLIP PATH_
-
-- `clip-path` | se utiliza para recortar un elemento mediante una forma definida, como un círculo, rectángulo o polígono
-
-- Permite ocultar partes de un elemento y mostrar solo las áreas que están dentro de la forma especificada
-
-- Esto puede ser útil para crear efectos de recorte personalizados en imágenes o elementos HTML
+- **`clip-path`**: Recorta un elemento con formas definidas (círculo, rectángulo, polígono).
+- Útil para efectos de recorte personalizados en imágenes o elementos HTML.
 
 ---

@@ -1,115 +1,163 @@
-# **GRID**
+# 🖌 **GUÍA DE GRID** 🖌
 
 ---
 
-## _INTRODUCCION_
+## **Introducción**
 
-- Sistema de diseño que permite crear diseños de página complejos y estructurados mediante la división de la página en filas y columnas
+CSS Grid es un sistema de diseño que permite crear diseños de página complejos y estructurados mediante la división de la página en filas y columnas. Facilita la creación de diseños responsivos y flexibles al permitir un posicionamiento preciso de elementos HTML en una cuadrícula bidimensional.
 
-- Permite un posicionamiento preciso de elementos HTML en una cuadrícula bidimensional, lo que facilita la creación de diseños responsivos y flexibles
+- **`display: grid`**: Propiedad que define un contenedor como una cuadrícula de elementos.
 
-- `display:"grid"` | propiedad que se utiliza para definir un contenedor como una cuadrícula de elementos
+---
 
-## _CREANDO GRID_
+## **Conceptos Básicos**
 
-- `grid-cell` | unidad basica donde se puede colocar elementos
+### **Elementos de la Cuadrícula**
 
-- `grid-item` | se refiere a los elementos hijos de un contenedor de cuadrícula o grid
+| Propiedad     | Descripción                                                     |
+| ------------- | --------------------------------------------------------------- |
+| `grid-cell`   | Unidad básica donde se pueden colocar elementos.                |
+| `grid-item`   | Elementos hijos de un contenedor de cuadrícula.                 |
+| `grid-lines`  | Líneas que definen los bordes de filas y columnas.              |
+| `grid-tracks` | Filas o columnas que forman la estructura de la cuadrícula.     |
+| `grid-area`   | Define en qué área de la cuadrícula debe colocarse un elemento. |
 
-- `grid-lines` | son las líneas de división que definen los bordes de las filas y columnas en una cuadrícula. Pueden ser horizontales (para filas) o verticales (para columnas) y se numeran de manera secuencial
+### **Propiedades Principales**
 
-- `grid-tracks` | son las filas o columnas que forman la estructura de la cuadrícula en CSS Grid
+| Propiedad               | Descripción                                       |
+| ----------------------- | ------------------------------------------------- |
+| `grid-template-columns` | Especifica el tamaño, ancho y número de columnas. |
+| `grid-template-rows`    | Especifica el tamaño, altura y número de filas.   |
 
-- `grid-area` | es una propiedad que especifica en qué área de la cuadrícula debe colocarse un grid-item. Permite asignar un nombre a un área definida en la cuadrícula para su posterior referencia
+---
 
-- `grid-template-columns` | utilizada en un contenedor de cuadrícula para especificar el tamaño, el ancho y el número de columnas de la cuadrícula
+## **Unidades de Medida**
 
-- `grid-template-rows` | utilizada en un contenedor de cuadrícula para especificar el tamaño, la altura y el número de filas de la cuadrícula
+### **`auto`**
 
-## _UNIDADES AUTO Y FR_
+- Ajusta automáticamente el tamaño de una fila o columna al contenido más grande.
 
-- `AUTO` | se utiliza para que el tamaño de una fila o columna de la cuadrícula se ajuste automáticamente al contenido de su elemento secundario más grande dentro de esa fila o columna
+### **`fr`**
 
-- `Fr` | se utiliza para distribuir el espacio disponible en una cuadrícula entre las filas o columnas en proporciones definidas. Una fracción (fr) representa una parte igual del espacio disponible después de que se hayan asignado los tamaños explícitos o implícitos a las filas o columnas
+- Distribuye el espacio disponible en proporciones definidas.
 
-## _REPEAT Y MINMAX_
+---
 
-- `repeat()` | se utiliza para especificar la repetición de un número específico de valores
+## **Funciones Útiles**
 
-- `minmax()` | se utiliza para definir un rango de tamaños para filas o columnas en una cuadrícula. Toma dos parámetros, el primero especifica el tamaño mínimo y el segundo el tamaño máximo
+### **`repeat()`**
 
-## _GRID IMPLICITO Y EXPLICITO_
+- Especifica la repetición de un número específico de valores.
 
-- `Grid Explícito` | se refiere a las filas y columnas definidas explícitamente mediante las propiedades _grid-template-rows_ y _grid-template-columns_. Estas filas y columnas se especifican directamente por el desarrollador
+### **`minmax()`**
 
-- `Grid Implícito` | se refiere a las filas y columnas generadas automáticamente para acomodar el contenido cuando no se ha especificado un tamaño explícito para una celda en particular. Esto sucede cuando se agregan más elementos de los que se han definido explícitamente en la cuadrícula
+- Define un rango de tamaños para filas o columnas (mínimo y máximo).
 
-- `grid-auto-rows` | propiedad que establece el tamaño por defecto de las filas en un grid implícito. Es decir, definen el tamaño de las filas que se crean automáticamente para acomodar el contenido cuando no se ha especificado un tamaño explícito para una celda en particular
+---
 
-- `grid-auto-columns` | propiedad que establece el tamaño por defecto de las columnas en un grid implícito. Es decir, definen el tamaño de las columnas que se crean automáticamente para acomodar el contenido cuando no se ha especificado un tamaño explícito para una celda en particular
+## **Grid Implícito y Explícito**
 
-- `grid-auto-flow` | propiedad que determina cómo se colocan automáticamente los elementos en un grid implícito cuando no hay suficiente espacio en las filas o columnas definidas explícitamente. Puede ser _row_, _column_ o _dense_, que controlan si los elementos se distribuyen en filas, columnas o en ambas direcciones, y cómo se reorganizan para llenar los espacios vacíos
+### **Grid Explícito**
 
-## _GRID GAP_
+- Filas y columnas definidas explícitamente con `grid-template-rows` y `grid-template-columns`.
 
-- `column-gap` | propiedad que especifica el espacio entre las columnas
+### **Grid Implícito**
 
-- `row-gap` | propiedad que especifica el espacio entre las filas
+- Filas y columnas generadas automáticamente para acomodar contenido adicional.
 
-- `gap` | propiedad que establece el espacio entre las filas y columnas de una cuadrícula
+#### Propiedades Relacionadas:
 
-## _GRID DINAMICO (responsive)_
+| Propiedad           | Descripción                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------- |
+| `grid-auto-rows`    | Tamaño por defecto de las filas implícitas.                                                 |
+| `grid-auto-columns` | Tamaño por defecto de las columnas implícitas.                                              |
+| `grid-auto-flow`    | Controla cómo se colocan automáticamente los elementos (valores: `row`, `column`, `dense`). |
 
-- `auto-fit` | ajusta automáticamente el número de columnas en la cuadrícula para que quepan en el contenedor sin desbordarse. Las columnas vacías se colapsan
+---
 
-- `auto-fill` | crea tantas columnas como sea posible dentro del contenedor, pero no colapsa las columnas vacías. Si hay más columnas de las que caben en el contenedor, algunas se desbordarán
+## **Espaciado en la Cuadrícula**
 
-## _GRID COLUMN Y ROW_
+| Propiedad    | Descripción                     |
+| ------------ | ------------------------------- |
+| `column-gap` | Espacio entre columnas.         |
+| `row-gap`    | Espacio entre filas.            |
+| `gap`        | Espacio entre filas y columnas. |
 
-- `grid-column` | propiead abreviada que define el rango de columnas en las que un elemento debe ser colocado dentro de la cuadrícula
+---
 
-- `grid-column-start` | define en qué línea de columna comienza un elemento en una cuadrícula
+## **Grid Dinámico (Responsive)**
 
-- `grid-column-end` | define en qué línea de columna termina un elemento en una cuadrícula
+| Valor       | Descripción                                                                    |
+| ----------- | ------------------------------------------------------------------------------ |
+| `auto-fit`  | Ajusta automáticamente el número de columnas para que quepan en el contenedor. |
+| `auto-fill` | Crea tantas columnas como sea posible, sin colapsar las columnas vacías.       |
 
-- `grid-row` | propiedad abreviada que define el rango de filas en las que un elemento debe ser colocado dentro de la cuadrícula
+---
 
-- `grid-row-start` | define en qué línea de fila comienza un elemento en una cuadrícula
+## **Posicionamiento en la Cuadrícula**
 
-- `grid-row-end` | define en qué línea de fila termina un elemento en una cuadrícula
+### **Columnas**
 
-## _GRID FLOW: Dense_
+| Propiedad           | Descripción                                   |
+| ------------------- | --------------------------------------------- |
+| `grid-column`       | Define el rango de columnas para un elemento. |
+| `grid-column-start` | Línea donde comienza un elemento.             |
+| `grid-column-end`   | Línea donde termina un elemento.              |
 
-- `grid-auto-flow: dense` | propiedad que especifica cómo se deben colocar automáticamente los elementos cuando la cuadrícula tiene espacio disponible después de colocar los elementos explícitamente definidos. Cuando se establece en dense, los elementos se llenan en los espacios vacíos de la cuadrícula de manera más compacta, lo que puede resultar en una disposición más eficiente de los elementos
+### **Filas**
 
-## _GRID AREAS_
+| Propiedad        | Descripción                                |
+| ---------------- | ------------------------------------------ |
+| `grid-row`       | Define el rango de filas para un elemento. |
+| `grid-row-start` | Línea donde comienza un elemento.          |
+| `grid-row-end`   | Línea donde termina un elemento.           |
 
-- `grid-template-areas` | propiedad que define el diseño de la cuadrícula mediante la asignación de nombres a áreas específicas. Estos nombres se utilizan luego en la propiedad grid-area para colocar elementos en la cuadrícula de acuerdo con el diseño definido
+---
 
-- `grid-area` | propiedad que define el nombre de un área de la cuadrícula y coloca un elemento en esa área. Permite organizar y posicionar elementos en una cuadrícula utilizando nombres de áreas
+## **Flujo de la Cuadrícula**
 
-## _ALINEACION CON GRID_
+- **`grid-auto-flow: dense`**: Coloca elementos automáticamente en los espacios vacíos de manera compacta.
 
-- `justify-items` | alinea los elementos dentro de sus celdas a lo largo del eje horizontal.
+---
 
-- `align-items` | alinea los elementos dentro de sus celdas a lo largo del eje vertical.
+## **Áreas de la Cuadrícula**
 
-- `justify-content` | alinea el contenido completo de la cuadrícula a lo largo del eje horizontal.
+| Propiedad             | Descripción                                                              |
+| --------------------- | ------------------------------------------------------------------------ |
+| `grid-template-areas` | Define el diseño de la cuadrícula asignando nombres a áreas específicas. |
+| `grid-area`           | Coloca un elemento en un área definida.                                  |
 
-- `align-content` | alinea el contenido completo de la cuadrícula a lo largo del eje vertical.
+---
 
-- `place-items` | propiedad abreviada para combinar `align-items` y `justify-items`.
+## **Alineación en la Cuadrícula**
 
-- `place-content` | propiedad abreviada para combinar `align-content` y `justify-content`.
+### **Alineación de Elementos**
 
-- `justify-self` | alinea un elemento individual dentro de su celda a lo largo del eje horizontal.
+| Propiedad       | Descripción                                            |
+| --------------- | ------------------------------------------------------ |
+| `justify-items` | Alinea elementos horizontalmente dentro de sus celdas. |
+| `align-items`   | Alinea elementos verticalmente dentro de sus celdas.   |
+| `place-items`   | Combina `align-items` y `justify-items`.               |
 
-- `align-self` | alinea un elemento individual dentro de su celda a lo largo del eje vertical.
+### **Alineación del Contenido**
 
-## _SUBGRID_
+| Propiedad         | Descripción                                   |
+| ----------------- | --------------------------------------------- |
+| `justify-content` | Alinea el contenido completo horizontalmente. |
+| `align-content`   | Alinea el contenido completo verticalmente.   |
+| `place-content`   | Combina `align-content` y `justify-content`.  |
 
-- Característica que permite que los elementos secundarios de un contenedor de cuadrícula utilicen las líneas de la cuadrícula definidas en el contenedor principal como su propia cuadrícula, lo que facilita la alineación de los elementos secundarios con las líneas de la cuadrícula del contenedor principal
+### **Alineación Individual**
 
-- Esto permite crear diseños más flexibles y complejos alineando las cuadrículas secundarias con las líneas de la cuadrícula principal
+| Propiedad      | Descripción                                    |
+| -------------- | ---------------------------------------------- |
+| `justify-self` | Alinea un elemento individual horizontalmente. |
+| `align-self`   | Alinea un elemento individual verticalmente.   |
+
+---
+
+## **Subgrid**
+
+El subgrid permite que los elementos secundarios utilicen las líneas de la cuadrícula principal como su propia cuadrícula, facilitando la alineación y creando diseños más flexibles y complejos.
 
 ---

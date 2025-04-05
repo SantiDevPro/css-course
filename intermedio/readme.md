@@ -1,195 +1,175 @@
-# **CSS INTERMEDIO**
+# 🖌 **CSS INTERMEDIO** 🖌
 
 ---
 
-## _SELECTORES (avanzado)_
+## **Selectores Avanzados**
 
-- `Selectores por atributos` | seleccionan elementos basados en el valor de sus atributos
+| Selector              | Descripción                                                            |
+| --------------------- | ---------------------------------------------------------------------- |
+| `Por atributos`       | seleccionan elementos basados en el valor de sus atributos.            |
+| `Descendientes`       | seleccionan elementos hijos anidados dentro de otro elemento.          |
+| `Hijos directos`      | seleccionan elementos que son hijos directos de otro elemento.         |
+| `Hermanos adyacentes` | seleccionan elementos adyacentes dentro del mismo nivel del árbol DOM. |
+| `Hermanos generales`  | seleccionan elementos en el mismo nivel del árbol DOM.                 |
 
-- `Selectores descendientes` | seleccionan elementos hijos que están anidados dentro de otro elemento, independientemente de su nivel de profundidad
+---
 
-- `Selectores de hijos directos` | seleccionan elementos que son hijos directos de otro elemento, sin importar cuántos niveles de profundidad haya entre ellos
+## **Herencia, Cascada y Especificidad**
 
-- `Selectores de hermanos adyacentes` | seleccionan elementos que son adyacentes a otro elemento dentro del mismo nivel del árbol DOM
+- **Herencia**: los estilos de un elemento padre se aplican a sus hijos, salvo que sean sobrescritos.
+- **Cascada**: los estilos se aplican según su origen, especificidad y orden de declaración.
+- **Especificidad**: determina qué regla CSS se aplica en caso de conflicto.
 
-- `Selectores de hermanos generales` | seleccionan elementos basados en la presencia de otros elementos en el mismo nivel del árbol DOM
+---
 
-## _HERENCIA, CASCADA Y ESPECIFICIDAD_
+## **Pseudoclases**
 
-- `Herencia` | es el proceso por el cual un elemento hijo hereda los estilos definidos en su elemento padre. Los estilos de un elemento padre pueden aplicarse a sus elementos hijos a menos que sean anulados o sobrescritos por estilos más específicos
+- Palabras clave que especifican un estado especial de un elemento.
 
-- `Cascada (cascading)` | se refiere al proceso mediante el cual se aplican y combinan los estilos CSS en un documento. Los estilos se aplican en función de su origen (como el autor, el usuario o el agente de usuario), su especificidad y su orden de declaración
+### Ejemplos comunes:
 
-- `Especificidad` | es un concepto que determina qué regla CSS se aplica cuando hay conflictos entre diferentes estilos que se aplican a un mismo elemento. La especificidad se basa en el tipo de selector, el número de selectores y los selectores de mayor peso tienen prioridad sobre los de menor peso
+| Pseudoclase                    | Descripción                                       |
+| ------------------------------ | ------------------------------------------------- |
+| `:hover`                       | cuando el cursor pasa sobre el elemento.          |
+| `:active`                      | cuando el elemento está activo (clic).            |
+| `:focus`                       | cuando el elemento tiene el foco.                 |
+| `:visited`                     | para enlaces visitados.                           |
+| `:nth-child(n)`                | selecciona el enésimo hijo.                       |
+| `:first-child` / `:last-child` | seleccionan el primer/último hijo.                |
+| `:is()` / `:where()`           | agrupan selectores.                               |
+| `:has()`                       | selecciona elementos que contienen ciertos hijos. |
 
-## _PSEUDOCLASES_
+---
 
-- Son palabras clave que se agregan a los selectores CSS y que especifican un estado especial del elemento seleccionado
+## **Pseudoelementos**
 
-- Algunas pseudoclases más usados:
+- Permiten aplicar estilos a partes específicas de un elemento.
 
-  - `:hover` | se aplica cuando el usuario pasa el cursor sobre el elemento
+### Ejemplos comunes:
 
-  - `:active` | se aplica cuando el elemento está activo, como cuando se hace clic en él
+| Pseudoelemento                    | Descripción                                    |
+| --------------------------------- | ---------------------------------------------- |
+| `::before` / `::after`            | insertan contenido antes/después del elemento. |
+| `::first-line` / `::first-letter` | estilizan la primera línea o carácter.         |
+| `::selection`                     | estiliza el texto seleccionado.                |
+| `::placeholder`                   | estiliza el texto de marcador de entrada.      |
+| `::marker`                        | estiliza los marcadores de lista.              |
 
-  - `:focus` | se aplica cuando el elemento tiene el foco del usuario
+---
 
-  - `:visited` | se aplica a un enlace que ha sido visitado por el usuario
+## **Metodología BEM**
 
-  - `:nth-child()` | selecciona elementos que son el enésimo hijo de su padre
+- **BEM**: Block Element Modifier.
+- Divide los estilos en bloques, elementos y modificadores para mayor modularidad y mantenibilidad.
 
-  - `:first-child` | selecciona el primer hijo de su padre
+---
 
-  - `:last-child` | selecciona el último hijo de su padre
+## **Propiedad Display**
 
-  - `:nth-of-type()` | selecciona elementos basados en su posición entre los elementos de un tipo específico
+- Controla cómo se muestra un elemento en el diseño.
 
-  - `first-of-type` | selecciona el primer elemento de su tipo dentro de su padre
+### Valores comunes:
 
-  - `last-of-type` | selecciona el último elemento de su tipo dentro de su padre
+| Valor           | Descripción                             |
+| --------------- | --------------------------------------- |
+| `block`         | genera un bloque.                       |
+| `inline`        | genera un nivel de línea.               |
+| `inline-block`  | nivel de línea con ajuste de tamaño.    |
+| `none`          | oculta el elemento.                     |
+| `flex` / `grid` | contenedores flexibles o de cuadrícula. |
 
-  - `:is()` | permite agrupar selectores CSS en una lista y aplicar un conjunto de estilos a los elementos que coincidan con cualquiera de los selectores de la lista
+---
 
-  - `:where()` | agrupa un conjunto de selectores, pero no afecta la especificidad de los selectores contenidos. Esto significa que los selectores dentro de :where() no afectarán la especificidad del selector general
+## **Posicionamiento**
 
-  - `:has()` | selecciona elementos que contienen ciertos elementos secundarios específicos
+### **Relativo y Absoluto**
 
-## _PSEUDOELEMENTOS_
+| Posición   | Descripción                                                          |
+| ---------- | -------------------------------------------------------------------- |
+| `Relative` | se posiciona en relación con su posición normal.                     |
+| `Absolute` | se posiciona en relación con su contenedor principal o el documento. |
 
-- Son elementos virtuales que se agregan a ciertos selectores CSS y que permiten aplicar estilos a partes específicas de un elemento
+### **Fixed y Sticky**
 
-- Algunos pseudoelementos más usados:
+| Posición | Descripción                                                    |
+| -------- | -------------------------------------------------------------- |
+| `Fixed`  | permanece fijo en la ventana del navegador.                    |
+| `Sticky` | mezcla entre relative y fixed, dependiendo del desplazamiento. |
 
-  - `::before` | permite insertar contenido antes del contenido de un elemento
+### Propiedades relacionadas:
 
-  - `::after` | permite insertar contenido después del contenido de un elemento
+- `top`, `left`, `right`, `bottom`: controlan la distancia desde los bordes.
+- `z-index`: controla el orden de apilamiento.
 
-  - `::first-line` | permite aplicar estilos específicos a la primera línea de texto dentro de un elemento
+---
 
-  - `::first-letter` | permite aplicar estilos específicos al primer carácter de texto dentro de un elemento
+## **Ventanas Modal**
 
-  - `::selection` | permite aplicar estilos al texto seleccionado por el usuario
+- Interfaz que aparece sobre el contenido principal y requiere interacción antes de continuar.
+- Elemento HTML: `<dialog>`.
 
-  - `::placeholder` | permite estilizar el texto de marcador de posición en los campos de entrada _`input`_ y área de texto _`textarea`_
+---
 
-  - `::marker` | permite estilizar los marcadores de lista (list-item) de una lista ordenada o no ordenada
+## **Transiciones**
 
-  - `::backdrop` | permite aplicar estilos al fondo detrás de un cuadro de diálogo modal cuando está visible
+- Efectos de animación para suavizar cambios de propiedades.
 
-## _METODOLOGIA BEM_
+### Propiedades clave:
 
-- `BEM` | Block Element Modifier
+| Propiedad             | Descripción               |
+| --------------------- | ------------------------- |
+| `transition-property` | propiedades animadas.     |
+| `transition-duration` | duración de la animación. |
+| `transition-delay`    | tiempo antes de iniciar.  |
+| `transition`          | propiedad abreviada.      |
 
-- Es un enfoque de nomenclatura para escribir clases en CSS de manera más modular y mantenible
+---
 
-- Es una metodología de nomenclatura que divide los estilos de CSS en bloques, elementos y modificadores, lo que facilita la creación de estilos reutilizables y predecibles para componentes de interfaz de usuario
+## **Desbordamiento (Overflow)**
 
-## _DISPLAY_
+- Controla cómo manejar el contenido que excede el contenedor.
 
-- Atributo que controla cómo se muestra un elemento en el diseño de la página
+### Propiedades:
 
-- Define el tipo de caja que un elemento genera y, por lo tanto, cómo se colocan y estructuran los elementos en el flujo del documento
+- `overflow`, `overflow-x`, `overflow-y`.
 
-- Algunos valores para display son:
+### Valores comunes:
 
-  - `block` | elemento genera un bloque de nivel de bloque
+- `visible`, `hidden`, `clip`, `scroll`, `auto`.
 
-  - `inline` | elemento genera un nivel de línea
+---
 
-  - `inline-block` | elemento genera un nivel de línea, pero permite ajustar el ancho y la altura
+## **Control de Flujo del Texto**
 
-  - `none` | elemento no se muestra en absoluto
+| Propiedad       | Descripción                                 |
+| --------------- | ------------------------------------------- |
+| `white-space`   | controla espacios en blanco.                |
+| `text-overflow` | maneja texto desbordado (e.g., `ellipsis`). |
+| `word-wrap`     | controla cómo se rompen las palabras.       |
 
-  - `inherit` | elemento hereda el valor de display de su elemento padre
+---
 
-  - `flex` | elemento se convierte en un contenedor flexible
+## **Object Fit y Object Position**
 
-  - `grid` | elemento se convierte en un contenedor de cuadrícula
+| Propiedad         | Descripción                                           |
+| ----------------- | ----------------------------------------------------- |
+| `object-fit`      | ajusta cómo `<img>` o `<video>` llenan su contenedor. |
+| `object-position` | posiciona el contenido dentro del contenedor.         |
 
-## _POSICION RELATIVA Y ABSOLUTA_
+---
 
-- `Position Absolute` | coloca un elemento en relación con su contenedor principal o, si no hay uno, con el cuerpo del documento. El elemento se elimina del flujo normal del documento, lo que significa que no afecta el posicionamiento de otros elementos. Se puede desplazar utilizando las propiedades top, right, bottom y left
+## **Contorno (Outline)**
 
-- `Position Relative` | coloca un elemento en relación con su posición normal en el flujo del documento. El elemento conserva su espacio en el diseño normal del documento y luego se puede desplazar utilizando las propiedades top, right, bottom y left, pero su desplazamiento no afecta a otros elementos
+| Propiedad        | Descripción                                                    |
+| ---------------- | -------------------------------------------------------------- |
+| `outline`        | agrega un contorno sin afectar el diseño.                      |
+| `outline-offset` | ajusta la distancia entre el contorno y el borde del elemento. |
 
-- `top` | propiedad que especifica la distancia entre el borde superior del elemento y el borde superior del elemento primario más cercano posicionado
+---
 
-- `left` | propiedad que especifica la distancia entre el borde izquierdo del elemento y el borde izquierdo del elemento primario más cercano posicionado
+## **Emmet**
 
-- `right` | propiedad que especifica la distancia entre el borde derecho del elemento y el borde derecho del elemento primario más cercano posicionado
-
-- `bottom` | propiedad que especifica la distancia entre el borde inferior del elemento y el borde inferior del elemento primario más cercano posicionado
-
-- `z-index` | propiedad que controla el orden de apilamiento de los elementos posicionados en el eje Z (profundidad) del plano de visualización
-
-## _VENTANAS MODAL_
-
-- Es una interfaz de usuario que aparece encima del contenido principal de una página web y requiere que el usuario interactúe con ella antes de poder volver a acceder al contenido subyacente
-
-- Por lo general, se utiliza para mostrar información importante, solicitar confirmación de acciones o recopilar datos adicionales del usuario
-
-- Las ventanas modales suelen destacarse visualmente del resto de la página y pueden cerrarse haciendo clic fuera de ellas o en un botón específico de cierre
-
-- `dialog` | elemento HTML que representa una ventana de diálogo modal en una página web. Se utiliza para mostrar información importante, solicitar confirmación de acciones o recopilar datos adicionales del usuario. A diferencia de otras ventanas modales, un diálogo no se bloquea, lo que significa que el usuario puede interactuar con el resto de la página mientras está abierto. Sin embargo, la atención del usuario está centrada en el diálogo hasta que se cierre o se resuelva
-
-## _POSICION FIXED Y STICKY_
-
-- `Position Fixed` | este valor de posición hace que un elemento se fije en una posición específica en relación con la ventana del navegador, lo que significa que permanecerá en esa posición incluso cuando se desplaza la página
-
-- `Position Sticky` | este valor de posición es una mezcla entre relative y fixed. Un elemento con position sticky se comportará como relative hasta que se desplace a una posición determinada, momento en el que se volverá fixed, permaneciendo fijo en esa posición mientras el contenedor es visible en la ventana del navegador
-
-## _TRANSICIONES_
-
-- Son efectos de animación que se aplican a propiedades específicas, como color, tamaño, posición, etc., cuando cambian de un estado a otro
-
-- Permiten suavizar el cambio entre los valores de las propiedades a lo largo del tiempo, creando efectos visuales más agradables y atractivos en las interfaces web
-
-- `transition-property` | especifica qué propiedades deben ser animadas durante la transición
-
-- `transition-duration` | define la duración de la transición, es decir, cuánto tiempo debe tomar para que se complete la animación
-
-- `transition-delay` | indica el tiempo de espera antes de que comience la transición
-
-- `transition` | propiedad abreviada que permite establecer de manera conjunta todas las propiedades de transición (property, duration, timing function y delay) en una sola declaración
-
-## _DESBORDAMIENTO (overflow)_
-
-- `overflow-x` | se utiliza para controlar el desbordamiento horizontal
-
-- `overflow-y` | se utiliza para controlar el desbordamiento vertical
-
-- `overflow` | propiedad que controla cómo se comporta el contenido que desborda el contenedor en el que está contenido. Permite establecer overflow-x y overflow-y simultáneamente en un solo lugar
-
-- Todas estas propiedades pueden tener los valores: _`visible`_, _`hidden`_, _`clip`_, _`scrool`_ y _`auto`_, que determinan cómo manejar el desbordamiento en esa dirección específica
-
-## _CONTROL DE FLUJO DEL TEXTO_
-
-- `white-space` | propiedad que controla cómo se manejan los espacios en blanco dentro del elemento. Puede tener valores como _normal_, _nowrap_, _pre_, _pre-wrap_ y _pre-line_.
-
-- `text-overflow` | propiedad que controla cómo se maneja el texto que desborda su contenedor en la dirección horizontal. Puede tener valores como _clip_ o _ellipsis_.
-
-- `text-wrap` | controla cómo se deben romper las palabras cuando no caben en una línea dentro de un contenedor. En normal, las palabras largas pueden desbordar su contenedor. Si se establece en break-word, las palabras largas pueden dividirse en varias líneas para ajustarse al contenedor
-
-- `word-wrap` | controla cómo se rompen las palabras cuando no caben en una línea. Puede tener valores como _normal_ o _break-word_.
-
-## _OBJECT FIT Y OBJECT POSITION_
-
-- `Object Fit` | controla cómo se ajusta un elemento `<img>` o `<video>` dentro de su contenedor. Puede especificar cómo el contenido debe escalarse para llenar el contenedor utilizando valores como _fill_, _contain_, _cover_, _none_, _scale-down_
-
-- `Object Position` | determina la posición del contenido dentro del contenedor en relación con los ejes X e Y
-
-## _CONTORNO (outline)_
-
-- `outline` | se utiliza para agregar un contorno alrededor de un elemento, pero sin afectar el diseño del flujo del documento ni el tamaño total del elemento
-
-- `outline-offset` | ajusta la distancia entre el borde del contorno (outline) y el borde del elemento. Esto permite controlar el espacio entre el contorno y el borde del elemento
-
-## _EMMET_
-
-- Emmet es un conjunto de abreviaturas y atajos de teclado utilizados principalmente en editores de código para agilizar y simplificar la escritura de código HTML y CSS
-
-- Con Emmet, los desarrolladores pueden escribir de manera rápida y eficiente código HTML y CSS utilizando atajos de teclado que se expanden automáticamente en código completo
-
-- Esto aumenta la productividad al reducir la cantidad de tiempo necesario para escribir código repetitivo y mejorar la legibilidad del código
+- Herramienta para escribir código HTML y CSS rápidamente mediante atajos.
+- Mejora la productividad y legibilidad del código.
 
 ---
